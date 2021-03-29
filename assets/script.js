@@ -65,9 +65,9 @@ function clearContent() {
 
 var getCityInfo = function (city) {
 
-  var firstApi = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262"
+  //var firstApi = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262"
 
-  fetch(firstApi)
+  fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262")
     .then((response) => {
       if (response.ok) {
         return response.json();
@@ -82,9 +82,9 @@ var getCityInfo = function (city) {
 
 var getCityInfoForecast = function (city) {
 
-  var secondApi = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262"
+  //var secondApi = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262"
 
-  fetch(secondApi)
+  fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262")
     .then((response) => {
       if (response.ok) {
         return response.json();
