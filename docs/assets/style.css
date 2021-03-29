@@ -1,0 +1,64 @@
+#uvIndex {
+  width: 5%;
+}
+
+header {
+  background-color: black;
+  text-align: center; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px; 
+  color: white; 
+}
+
+#left-side {
+background-color: rgb(248, 238, 238);
+border-color: black;
+}
+
+#user-form, #list {
+  margin-left: 20%; 
+}
+
+#cityName {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px; 
+}
+
+#forecast {
+  margin-top: 20px; 
+}
+
+@media only screen and (max-width: 950px) {
+  #day1, #day2, #day3, #day4, #day5 {
+   font-size: 15px; 
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  #day1, #day2, #day3, #day4, #day5 {
+   font-size: 10px; 
+  }
+
+  #cityname {
+    width: 25%px; 
+ }
+
+ #leftside{
+display:flex;
+height: 20px; 
+ }
+
+ .col-12 {
+margin-top: 80px;
+ }
+
+#list {
+  display: none;
+}
+
+#uvIndex {
+  font-size: 15px; 
+  width: 50%;
+}
+
+}

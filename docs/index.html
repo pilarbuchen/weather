@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        Weather Dashboard
+    </header>
+    </br>
+    </br>
+    <div class="row">
+        <div id="leftside" class="col-4">
+            <form id="user-form"> Search for a City:
+                <input name="cityname" id="cityname" type="text" placeholder="">
+                <button>Search</button>
+            </form>
+            </br>
+            </br>
+            <ul id="list">
+            </ul>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-12" id="city">
+                    <div id="cityName"></div>
+                    <div id="cityTemp"> </div>
+                    <div id="cityHumidity"></div>
+                    <div id="cityWindSpeed"> </div>
+                    <div id="uvIndex"> </div>
+                </div>
+                </br>
+                </br>
+            </br>
+        </br>
+                <div id="forecast" class="col-12">
+                   <div id="wording"> 5-Day Forecast: </div> 
+                    <div class="row">
+                        <div class="col" id="day1">
+                            <div id="1date"></div>
+                            <div id="1icon"></div>
+                            <div id="1humidity"></div>
+                            <div id="1temp"></div>
+                        </div>
+                        <div class="col" id="day2">
+                            <div id="2date"></div>
+                            <div id="2icon"></div>
+                            <div id="2humidity"> </div>
+                            <div id="2temp"></div>
+                        </div>
+                        <div class="col" id="day3">
+                            <div id="3date"></div>
+                            <div id="3icon"></div>
+                            <div id="3humidity"> </div>
+                            <div id="3temp"> </div>
+                        </div>
+                        <div class="col" id="day4">
+                            <div id="4date"> </div>
+                            <div id="4icon"></div>
+                            <div id="4humidity"> </div>
+                            <div id="4temp"> </div>
+                        </div>
+                        <div class="col" id="day5">
+                            <div id="5date"> </div>
+                            <div id="5icon"></div>
+                            <div id="5humidity"> </div>
+                            <div id="5temp"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
