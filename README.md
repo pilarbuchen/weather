@@ -11,7 +11,7 @@ For this challenge, I made a weather forecast website. You can utilize the searc
 
 4. Once you submit a city, a list will form on the left, showing the list of all the cities that have been added.
 
-- Website URL:  https://pilarbuchen.github.io/weatherdashboard/
+- Website URL: https://pilarbuchen.github.io/weather/
 
 ![alt text](assets\weatherdashboard.png)
 ---
