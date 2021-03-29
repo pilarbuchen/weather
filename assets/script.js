@@ -65,7 +65,7 @@ function clearContent() {
 
 var getCityInfo = function (city) {
 
-  var firstApi = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262"
+  var firstApi = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262"
 
   fetch(firstApi)
     .then((response) => {
@@ -82,7 +82,7 @@ var getCityInfo = function (city) {
 
 var getCityInfoForecast = function (city) {
 
-  var secondApi = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262"
+  var secondApi = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=7e3bdc387a1baa941f9800e8f1848262"
 
   fetch(secondApi)
     .then((response) => {
@@ -128,7 +128,7 @@ cityWindPlacement.appendChild(createCityWindSpeedElem);
 const lon = data.coord.lon
 const lat = data.coord.lat
 const createUVElement = document.createElement("span")
-const finalResult = "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=7e3bdc387a1baa941f9800e8f1848262"
+const finalResult = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=7e3bdc387a1baa941f9800e8f1848262"
 fetch(finalResult)
   .then((response) => {
     if (response.ok) {
